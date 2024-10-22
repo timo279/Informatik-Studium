@@ -1,0 +1,337 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{cancel}
+\usetikzlibrary{arrows}
+
+\title{Lernzettel}
+\author{Pascal Diller}
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+
+\newpage
+\section{Logik}
+\begin{itemize}
+    \item ''$\land$'': \textbf{Und}
+    \item ''$\lor$'': \textbf{Oder}
+    \item ''$\lnot$'': \textbf{Nicht} (Verneinung)
+    \item $A \implies B$: $A \textbf{ impliziert} B$
+    \item $A \impliedby B$: $A \text{ wird durch } B \textbf{ impliziert}$
+    \item $A \Longleftrightarrow  B$: $A \text{ ist äquivalent zu } B$
+    \subitem{Es gilt: $A \implies B$ und $A \impliedby B$}
+    \item $\forall$: \textbf{Für alle}
+    \item $\exists$: \textbf{Es existiert (mindestens) ein}
+\end{itemize}
+
+\section{Mengen}
+Eine \textbf{Menge} ist eine Zusammenfassung von (mathematischen) Objekten. \\
+Die Objekte in einer Menge werden als \textbf{Elemente} bezeichnet.
+ 
+\begin{itemize}
+    \item $x \in M$: x in/Element M
+    \item $x \notin M$: x nicht in/Element M
+\end{itemize}
+\vspace{1ex}
+Defintion einer Menge:
+\begin{itemize}
+    \item Aufzählung:
+    \begin{itemize}
+        \item[] $M_1 = \{0, 1, 2, 3, 5, 8, -1\}; \hspace{2ex} M_2 = \{1, 2, 3, 4, 5, \dots\}$
+        \item[] Es kommt \textbf{nicht} auf die \textbf{Reihenfolge} und \textbf{nicht} auf \\ \textbf{Verdopplungen} an:
+        $\{1, 3, 2, 3\} = \{3, 2, 1\} = \{1, 2, 3\}$
+    \end{itemize}
+    \item Beschreibung:
+    \[M_3 = \{x \in \mathbb{R} : x \geq -1 \land x \leq 1\} = [-1, 1]\]
+\end{itemize}
+\vspace{1ex}
+Menge $B$ ist eine \textbf{Teilmenge} von Menge $A$, wenn für jedes $x \in A$ auch $x \in B$ gilt.
+\begin{itemize}
+    \item $A \subset B$ (''$A$ ist eine Teilmenge von $B$'')
+    \item $A \supset B$ (''$B$ ist eine Teilmenge von $A$'')
+\end{itemize}
+\vspace{1ex}
+Mengenoperationen:
+\begin{itemize}
+    \item \textbf{Vereinigung} der Mengen $A$ und $B$
+    \subitem{$A \cup B = \{x : x \in A \lor x \in B\}$ (''A vereinigt B'')}
+    \item \textbf{Durchschnitt} der Mengen $A$ und $B$
+    \subitem{$A \cap B = \{x : x \in A \land x \in B\}$} (''A geschnitten B'')
+    \item \textbf{Differenzmenge} der Mengen $A$ und $B$
+    \subitem{$A \setminus B = \{x : x \in A \land x \notin B\}$} (''A ohne B'')
+\end{itemize}
+\vspace{1ex}
+Kartesisches Produkt: \\
+sei $n \in \mathbb{N}$ und seien $X_1, \dots, X_n$ Mengen, dann ist
+\[X_1 \times \dots \times X_n = \{(x_1, \dots, x_n) : x_i \in X_i, \text{ für } i = 1,\dots,n\}\]
+die Menge der n-\textbf{Tupel} mit $i$-ter Koordinate $x_i$ in $X_i$ für $i = 1,\dots,n$. \\
+\newline
+Potenzmenge: \\
+Die Menge aller Teilmengen einer Menge $X$ heißt Potenzmenge von $X$ und wird mit $\mathcal{P(X)}$ bezeichnet:
+\[\mathcal{P}(X) = \{Y: Y \subset X\}\]
+Es gilt immer: $\emptyset \in \mathcal{P}(X)$ und $X \in \mathcal{P}(X)$.\\
+Beispiel: Sei $X = \{1, 2, 3\}$. Dann ist \[\mathcal{P}(X) = \{\emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2. 3\}, \{1, 2, 3\}\}\]
+Sei $P$ eine Menge bestehend aus Mengen. Dann steht
+\[\bigcup_{Y \in P} Y = \{y: \text{ es gibt } Y \in P \text{ so dass } y \in Y\}\]
+für die (möglicherweise unendliche) Vereinigung aller Mengen in $P$. \\
+\newline
+Partitionen: \\
+Sei $X$ eine Menge. Eine Partition von $X$ ist eine Teilmenge $P \in \mathcal{P}(X) \setminus \{\emptyset\}$ sodass
+\begin{itemize}
+    \item für alle $Y,Z \in P$ mit $Y \neq Z, Y \cap Z = \emptyset$ ($Y$ und $Z$ sind disjunkt).
+    \item $\bigcup_{Y \in P} Y = X$. 
+\end{itemize}
+\newpage
+Definierte Mengen:
+\begin{itemize}
+    \item Leere Menge: $\emptyset = \{\}$
+    \item Natürliche Zahlen: $\mathbb{N} = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \dots\}$ ($0 \notin \mathbb{N}$)
+    \item Ganze Zahlen: $\mathbb{Z} = \{0, 1, -1, 2, -2, 3, -3, 4, -4, \dots\}$
+    \item Rationale Zahlen: $\mathbb{Q} = \left\{\frac{p}{q} : p,q \in \mathbb{Z}, q \neq 0\right\}$
+    \item Relle Zahlen: $\mathbb{R}$, Menge aller \textbf{rellen Zahlen}, die man \textbf{nicht abzählen} kann
+\end{itemize}
+Es gilt: $\mathbb{N} \in \mathbb{Z} \in \mathbb{Q} \in \mathbb{R}$
+
+\section{Relationen}
+Eine \textbf{(binäre) Relation} zwischen zwei Mengen $X$ und $Y$ ist eine Teilmenge
+\[\text{R} \in X \times Y\]
+Im Falle $X = Y$ sprechen wir von einer Relation auf X. \\
+$x \in X$ steht in Relation zu $y \in Y$ genau dann wenn $(x, y) \in \text{R}$. \\
+Auch geschrieben: $x\:\text{R}\:y$ oder $x \sim_{\text{R}} y$ für $(x, y) \in \text{R}$ und $x\:\cancel{\text{R}}\:y$ oder $x \cancel{\sim}_{\text{R}} y$ für $(x,y) \notin \text{R}$. \\ \newline
+Seien $X, Y$ und $Z$ Mengen und R $\subset X \times Y$, S $\subset Y \times X$ Relationen.
+\begin{itemize}
+    \item Die zu R \textbf{inverse Relation} ist \[\text{R}^{-1} = \{(y,x) \in Y \times X : (x, y \in \text{R})\}\]
+    \item Die Verkettung von R und S ist \[\text{S} \circ \text{R} = \{(x,z) \in X \times Z : \text{es gibt } y \in Y \text{ mit } (x,y) \in \text{ R und } (x,y) \in \text{S}\}\]
+\end{itemize}
+Eine binäre Relation R auf der Menger $X$ heißt:
+\begin{itemize}
+    \item \textbf{relfexiv}, wenn $x\:\text{R}\:x$ für alle $x \in X$.
+    \item \textbf{symmetrisch}, wenn für alle $x, y \in X$ aus $x\:\text{R}\:y$ stets $y\:\text{R}\:x$ folgt.
+    \item \textbf{antisymmetrische}, wenn für alle $x, y \in X$ aus $x\:\text{R}\:y$ und $y\:\text{R}\:x$ stets $x = y$ folgt.
+    \item \textbf{asymmetrisch}, wenn für alle $x, y \in X$ aus $x\:\text{R}\:y$ stets $y\:\cancel{R}\:x$ folgt.
+    \item \textbf{transitiv}, wenn für alle $x, y, z \in X$ aus $x\:\text{R}\:y$ und $y\:\text{R}\:y$ stets $x\:\text{R}\:z$ folgt.
+\end{itemize}
+\subsection{Äquivalenzrelationen}
+
+\section{Zahlensysteme}
+\subsection{Binärsystem}
+\begin{itemize}[leftmargin=*]
+    \item[] Eine Binärzahl $b$ mit $n + 1$ Stellen hat die Form $b_n\dots b_1 b_2$ mit $b_i \in \{0,1\}$.
+    \item[] Sie entspricht der Dezimalzahl $d$ mit $d = b_n \cdot 2^n + \cdots + b_1 \cdot 2^1 + b_0 \cdot 2^0$ 
+    \item[] Beispiel: $1101_2 = 1 \cdot 2^3 + ^\cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 13_{10}$
+\end{itemize}
+\subsubsection{Carry-Flag}
+Wenn bei einer Addition oder Subtraktion ein \textbf{Übertrag in der höchsten Stelle} auftritt, wird die Carry-Flag gesetzt.
+Dieser kann von nachfolgenden Befehlen aufgerufen werden.
+\subsubsection{Zweierkomplement}
+\begin{itemize}[leftmargin=*]
+    \item[] Um \textbf{negative Zahlen} darzustellen wird der entsprechende Wert des \textbf{höchsten Bits negiert}.
+    \item[] Beispiel bei 4 Bit: $1011_{2c} = 1 \cdot (-2^3) + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = -5$
+    \item[] Um von einer positiven ganzen Zahl zur negativen Zahl (oder umgekehrt) gleichen Betrags zu gelangen werden \textbf{alle Bits invertiert} und \textbf{1 zum Ergebnis addiert}.
+\end{itemize}
+
+\subsection{Hexadezimalsystem}
+\begin{itemize}[leftmargin=*]
+    \item[] Eine Hexadezimalzahl $h$ mit $n + 1$ Stellen hat die Form $h_n \dots h_1 h_0$ mit $h_i \in \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A(\widehat{=}10), B(\widehat{=}11), C(\widehat{=}12), D(\widehat{=}13), E(\widehat{=}14), F(\widehat{=}15)\}$.
+    \item[] Sie entspricht der Dezimalzahl $d$ mit $d = h_n \cdot 16^n + h_1 \cdot 16^1 + h_0 \cdot 16^0$.
+    \item[] Beispiel: $\mathtt{5F}_{16} = 5 \cdot 16^1 + 15 \cdot 16^0 = 95_{10}$
+    \item[] 4 Binärziffern lassen sich zu einer Hexadezimalzahl zusammenfassen:\\$\underbrace{1101}_{13_{10}=D_{16}} \underbrace{0011_2}_{3_{16}} = \mathtt{D3_{16}}$
+\end{itemize}
+\subsection{Oktalsystem}
+\begin{itemize}[leftmargin=*]
+    \item[] Eine Oktalzahl $o$ mit $n + 1$ Stellen hat die Form $o_n \dots o_1 o_0$ mit $o_i \in \{0, 1, 2, 3, 4, 5, 6, 7\}$
+    \item[] Sie entspricht der Dezimalzahl $d$ mit $d = o_n \cdot 8^n + \cdots + o_1 \cdot 8^1 + o_0 \cdot 8^0$.
+    \item[] Beispiel: $36_8 = 3 \cdot 8^1 + 6 \cdot 8^0 = 30_{10}$
+    \item[] 3 Binärziffern lassen sich zu einer Oktalzahl zusammenfassen:\\$\underbrace{11}_{3_8} \underbrace{010}_{2_8} \underbrace{011_2}_{3_8} = 323_8$
+\end{itemize}
+\newpage
+\subsection{Festkommazahlen}
+Eine Festkommazahl besteht aus einer \textbf{festen Anzahl von Ziffern vor und nach dem Komma}.\\ \newline
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+    $2^3$ & $2^2$ & $2^1$ & $2^0$ &  & $2^{-1}$ & $2^{-2}$ & $2^{-3}$ & $2^{-4}$ \\ \hline
+    1 & 1 & 0 & 1 & . & 0 & 1 & 0 &1
+\end{tabular}
+\subsection{Gleitkommazahlen: IEEE 754}
+3 Formate:
+\begin{itemize}
+    \item Single Precision: 32 Bit
+    \item Double Precision: 64 Bit
+    \item Extended Precision: 80 Bit
+\end{itemize}
+Basiert auf der wissenschaftlichen Notation.
+\subsubsection{Aufbau}
+\begin{tabular}{@{}l l}
+    Single Precision: &
+    \begin{tabular}{|c|c|c|}
+        \hline
+        1 Bit Vorzeichen & 8 Bit Exponent & 23 Bit normalisierte Mantisse\\
+        \hline
+    \end{tabular} \\
+    Double Precision: &
+    \begin{tabular}{|c|c|c|}
+        \hline
+        1 Bit Vorzeichen & 11 Bit Exponent & 52 Bit normalisierte Mantisse\\
+        \hline
+    \end{tabular}
+\end{tabular} \\
+\newline
+Vorzeichen: $0 = +$; $1 = -$ \\
+\newline
+Exponent: wird gespeichert, indem man den festen Biaswert (127:SP, 1023:DP) addiert. \\
+\newline
+Die Mantisse beginnt mit einem ''Hidden Bit'' (immer 1).
+\subsubsection{Dezimal zu IEEE 754}
+Beispiel: -62.058
+\begin{enumerate}
+    \item Vorzeichen Bit bestimmen
+    \subitem{Vorzeichen Bit = 1}
+    \item Zu pur Binär umwandeln
+    \subitem{$62.058_{10} = 111110.10010100_2$}
+    \item Normalisieren für Mantisse und Exponent (ohne Bias)
+    \subitem{$111110.10010100_2 = 1.1111010010100_2 \cdot 2^5$}
+    \item Exponent mit Bias bestimmen
+    \subitem{$5 + 127 = 132_{10} = 10000100_2$}
+    \item Führende 1 der Mantisse abschneiden
+    \subitem{$1.1111010010100_2 \rightarrow 1111010010100_2$}
+    \item Zusammenfügen
+    \subitem{$-62.058_{10} = \underbrace{1}_{\substack{\text{Vorzeichen}\\ \text{Bit}}} \underbrace{10000100}_{\text{Exponent}} \underbrace{1111010010100}_{\text{Mantisse}}$}
+\end{enumerate}
+\subsubsection{IEEE 754 zu Dezimal}
+Beispiel: $01000010011010100000000000000000$
+\begin{enumerate}
+    \item Vorzeichen bestimmen
+    \subitem{Vorzeichen: $+$}
+    \item Exponent bestimmen (Bias muss abgezogen werden)
+    \subitem{$10000100_2 - 127_{10} = 132_{10} - 127_{10} = 5_{10}$}
+    \item Mantisse bestimmen
+    \subitem{
+        \begin{tabular}{|c|c|c|c|c|c|}
+            $\frac{1}{2}$ & $\frac{1}{4}$ & $\frac{1}{8}$ & $\frac{1}{16}$ & $\frac{1}{32}$ & $\frac{1}{64}$ \\ \hline
+            1 & 1 & 0 & 1 & 0 & 1
+        \end{tabular}
+    }
+    \subitem{$\frac{1}{2} + \frac{1}{4} + \frac{1}{16} + \frac{1}{64} = \frac{53}{64} = 0.828125$}
+    \item 1 zur Mantisse addieren (Hidden Bit) und Vorzeichen einrechnen
+    \subitem{1.828125}
+    \item Ergebnis berechnen
+    \subitem{$1.828125 \cdot 2^5 = 58.5_{10}$}
+\end{enumerate}
+
+\newpage
+\section{Summenzeichen und Produktzeichen}
+\subsection{Summenzeichen}
+Seien $m, n \in \mathbb{Z}$ mit $m \leq n$. Die Summen der Zahlen $a_m, a_{m+1}, \dots, a_n$ wird folgendermaßen bezeichnet:
+\[\sum_{i=m}^{n}a_i = a_m + a_{m+1} + \ldots + a_n\]
+Dabei gilt: $i \: \widehat{=} \textbf{ Summationsindex}; \quad m/n \: \widehat{=} \textbf{ untere/obere Summationsgrenze}$.
+Rechenregeln:
+\[\sum_{i=m}^{n}c \cdot a_i = c \cdot \sum_{i=m}^{n}a_i\]
+\[\sum_{i=m}^{n}(a_i + b_1) = \sum_{i=m}^{n}a_i + \sum_{i=m}^{n}b_i\]
+\subsection{Produktzeichen}
+Seien $m, n \in \mathbb{Z}$ mit $m \leq n$. Das Produkt der Zahlen $a_m, a_{m+1},\ldots, a_n$ wird folgendermaßen bezeichnet:
+\[\prod_{i=m}^{n}a_i = a_m \cdot a_{m+1} \cdot \ldots \cdot a_n\]
+Dabei gilt: $i \: \widehat{=} \textbf{ Laufindex}; \quad m/n \: \widehat{=} \textbf{ untere/obere Grenze}$.
+
+\newpage
+\section{Rechenregeln}
+\subsection{Bruchregeln}
+\begin{center}
+    \scalebox{1.3}{
+        \begin{tabular}{c c}
+            $\frac{a}{b} = \frac{a \cdot c}{b \cdot c}$ & $\frac{a}{b} + \frac{c}{b} = \frac{a + c}{b}$ \vspace{1ex}\\
+            $\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$ & $\frac{a}{b} : \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{ad}{bc}$
+        \end{tabular}
+    }
+\end{center}
+
+\subsection{Potenzgesetze}
+\begin{center}
+\scalebox{1.1}{
+    \begin{tabular}{c c}
+        $a^n \cdot a^m = a^{n+m}$ & $a^n \cdot b^n = (a \cdot b)^n$ \vspace{1ex}\\ 
+        ${\left(a^n\right)}^m = {\left(a^m\right)}^n = a^{n \cdot m}$ & $a^{-n} = \frac{1}{a^n}, a \neq 0$ \vspace{1ex}\\
+        $a^0 = 1, a \in \mathbb{R}$
+    \end{tabular}
+}
+\end{center}
+
+\subsection{Wurzelgesetze}
+\begin{center}
+    \scalebox{1.1}{
+    \begin{tabular}{c c}
+        $\sqrt[n]{a^n}= a$ &  $\left(\sqrt[n]{a}\right)^n = a$ \vspace{1ex}\\
+        $\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}$ & $\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}, \hspace{1ex} b \neq 0$ \vspace{1ex}\\
+        $a^\frac{1}{n} = \sqrt[n]{a}$ & $\hspace{1ex} a^{-\frac{1}{n}} = \frac{1}{\sqrt[n]{a}}, a > 0$
+    \end{tabular}
+    }
+\end{center}
+
+\subsection{Logarithmengesetze}
+\begin{center}
+    \scalebox{1.1}{
+        \begin{tabular}{c c}
+            $\log 1 = 0$ & $\hspace{1ex} \log e = 1$ \vspace{1ex} \\
+            $a^x = b \Leftrightarrow x = \log_a(b)$ & $\log(a^x) = x \log a$ \vspace{1ex} \\
+            $\log(x \cdot y) = \log x + \log y$ & $\log \left(\frac{x}{y}\right) = \log x - \log y$ \\
+        \end{tabular}
+        }
+\end{center}
+
+\newpage
+\section{Trigonometrie}
+\subsection{Bogenmaß}
+Der Bogenmaß ist die Länge des Kreisbogens des Einheitskreises und gibt den Betrag des Winkels an. Der Umfang des Einheitskreises beträgt $2\pi$.
+\begin{center}
+    \scalebox{1.15}{
+    \begin{tabular}{c||c|c|c|c|c|c|c|c}
+        Bogenmaß & 0 & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$ & $\pi$ & $\frac{3\pi}{2}$ & $2\pi$\\
+        \hline
+        Gradmaß & 0° & 30° & 45° & 60° & 90° & 180° & 270° & 360°\\
+    \end{tabular}
+    }
+\end{center}
+Umwandlung von Winkel $\alpha$ von Gradmaß zu Bogenmaß: Bogenmaß $= \alpha \frac{\pi}{\text{180°}}$
+Umwandlung von Winkel $\alpha$ von Bogenmaß zu Gradmaß: Gradmaß $= \alpha \frac{\text{180°}}{\pi}$
+
+\section{Differentialrechnung}
+\subsection{Ableitungsregeln}
+\subsubsection{Natürliche Potenzen}
+\[\frac{d}{dx}x^n = nx^{x-1}\]
+\subsubsection{Summenregel}
+\[\frac{d}{dx}\left(u(x) + v(x)\right) = \frac{d}{dx}u(x) + \frac{d}{dx}v(x)\]
+\subsubsection{Produktregel}
+\[\frac{d}{dx}(u(x) \cdot v(x)) = \frac{d}{dx}u(x) \cdot v(x) + u(x) \cdot \frac{d}{dx}v(x)\]
+\subsubsection{Kettenregel}
+\[\frac{d}{dx}u(v(x)) = \frac{d}{dv}u(v) \cdot \frac{d}{dx}v(x)\]
+
+\newpage
+\section{Ebenen}
+\subsection{Parameterform}
+\[E: \vec{x} = \vec{p} + r \cdot \vec{u} + s \cdot \vec{v}\]
+\begin{center}
+    $\vec{p} \: \widehat{=}$ Stützvektor \\
+    $\vec{u}, \vec{v} \: \widehat{=}$ Spannvektoren
+\end{center}
+\subsection{Normalenform}
+\[E: (\vec{x} - \vec{p}) \cdot \vec{n} = 0\]
+\begin{center}
+    $\vec{x} \: \widehat{=}$ Ortsvektor \\
+    $\vec{p} \: \widehat{=}$ Stützvektor \\
+    $\vec{n} \: \widehat{=}$ Normalenvektor, orthogonal zu Spannvektoren
+\end{center}
+\subsection{Koordinatenform}
+\[ax_1 + bx_2 + cx_3 = d = \vec{n} \cdot \vec{p}\]
+Umwandlung von Koordinatenform in Normalenform:
+
+\end{document}
