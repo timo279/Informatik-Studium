@@ -1,36 +1,42 @@
 \contentsline {section}{Logik}{4}{section*.2}%
 \contentsline {section}{Mengen}{4}{section*.3}%
-\contentsline {section}{Relationen}{7}{section*.4}%
-\contentsline {subsection}{Äquivalenzrelationen}{8}{section*.5}%
-\contentsline {section}{Zahlensysteme}{8}{section*.6}%
-\contentsline {subsection}{Binärsystem}{8}{section*.7}%
-\contentsline {subsubsection}{Carry-Flag}{8}{section*.8}%
-\contentsline {subsubsection}{Zweierkomplement}{8}{section*.9}%
-\contentsline {subsection}{Hexadezimalsystem}{9}{section*.10}%
-\contentsline {subsection}{Oktalsystem}{9}{section*.11}%
-\contentsline {subsection}{Festkommazahlen}{10}{section*.12}%
-\contentsline {subsection}{Gleitkommazahlen: IEEE 754}{10}{section*.13}%
-\contentsline {subsubsection}{Aufbau}{10}{section*.14}%
-\contentsline {subsubsection}{Dezimal zu IEEE 754}{10}{section*.15}%
-\contentsline {subsubsection}{IEEE 754 zu Dezimal}{11}{section*.16}%
-\contentsline {section}{Fehlererkennung}{11}{section*.17}%
-\contentsline {section}{Summenzeichen und Produktzeichen}{12}{section*.18}%
-\contentsline {subsection}{Summenzeichen}{12}{section*.19}%
-\contentsline {subsection}{Produktzeichen}{12}{section*.20}%
-\contentsline {section}{Rechenregeln}{13}{section*.21}%
-\contentsline {subsection}{Bruchregeln}{13}{section*.22}%
-\contentsline {subsection}{Potenzgesetze}{13}{section*.23}%
-\contentsline {subsection}{Wurzelgesetze}{13}{section*.24}%
-\contentsline {subsection}{Logarithmengesetze}{13}{section*.25}%
-\contentsline {section}{Trigonometrie}{14}{section*.26}%
-\contentsline {subsection}{Bogenmaß}{14}{section*.27}%
-\contentsline {section}{Differentialrechnung}{14}{section*.28}%
-\contentsline {subsection}{Ableitungsregeln}{14}{section*.29}%
-\contentsline {subsubsection}{Natürliche Potenzen}{14}{section*.30}%
-\contentsline {subsubsection}{Summenregel}{14}{section*.31}%
-\contentsline {subsubsection}{Produktregel}{14}{section*.32}%
-\contentsline {subsubsection}{Kettenregel}{14}{section*.33}%
-\contentsline {section}{Ebenen}{15}{section*.34}%
-\contentsline {subsection}{Parameterform}{15}{section*.35}%
-\contentsline {subsection}{Normalenform}{15}{section*.36}%
-\contentsline {subsection}{Koordinatenform}{15}{section*.37}%
+\contentsline {section}{Relationen}{6}{section*.4}%
+\contentsline {subsection}{Äquivalenzrelationen}{7}{section*.5}%
+\contentsline {section}{Abbildungen}{8}{section*.6}%
+\contentsline {section}{Zahlensysteme}{9}{section*.7}%
+\contentsline {subsection}{Binärsystem}{9}{section*.8}%
+\contentsline {subsubsection}{Carry-Flag}{9}{section*.9}%
+\contentsline {subsubsection}{Zweierkomplement}{9}{section*.10}%
+\contentsline {subsection}{Hexadezimalsystem}{9}{section*.11}%
+\contentsline {subsection}{Oktalsystem}{10}{section*.12}%
+\contentsline {subsection}{Festkommazahlen}{10}{section*.13}%
+\contentsline {subsection}{Gleitkommazahlen: IEEE 754}{10}{section*.14}%
+\contentsline {subsubsection}{Aufbau}{10}{section*.15}%
+\contentsline {subsubsection}{Dezimal zu IEEE 754}{11}{section*.16}%
+\contentsline {subsubsection}{IEEE 754 zu Dezimal}{11}{section*.17}%
+\contentsline {section}{Fehlererkennung}{12}{section*.18}%
+\contentsline {subsection}{Redundanzen}{12}{section*.19}%
+\contentsline {subsection}{Hamming-Distanz}{12}{section*.20}%
+\contentsline {subsection}{Parität}{12}{section*.21}%
+\contentsline {subsection}{Zweidimensionale Parität}{13}{section*.22}%
+\contentsline {subsection}{Hamming-Code}{13}{section*.23}%
+\contentsline {section}{Summenzeichen und Produktzeichen}{14}{section*.24}%
+\contentsline {subsection}{Summenzeichen}{14}{section*.25}%
+\contentsline {subsection}{Produktzeichen}{14}{section*.26}%
+\contentsline {section}{Rechenregeln}{15}{section*.27}%
+\contentsline {subsection}{Bruchregeln}{15}{section*.28}%
+\contentsline {subsection}{Potenzgesetze}{15}{section*.29}%
+\contentsline {subsection}{Wurzelgesetze}{15}{section*.30}%
+\contentsline {subsection}{Logarithmengesetze}{15}{section*.31}%
+\contentsline {section}{Trigonometrie}{16}{section*.32}%
+\contentsline {subsection}{Bogenmaß}{16}{section*.33}%
+\contentsline {section}{Differentialrechnung}{16}{section*.34}%
+\contentsline {subsection}{Ableitungsregeln}{16}{section*.35}%
+\contentsline {subsubsection}{Natürliche Potenzen}{16}{section*.36}%
+\contentsline {subsubsection}{Summenregel}{16}{section*.37}%
+\contentsline {subsubsection}{Produktregel}{16}{section*.38}%
+\contentsline {subsubsection}{Kettenregel}{16}{section*.39}%
+\contentsline {section}{Ebenen}{17}{section*.40}%
+\contentsline {subsection}{Parameterform}{17}{section*.41}%
+\contentsline {subsection}{Normalenform}{17}{section*.42}%
+\contentsline {subsection}{Koordinatenform}{17}{section*.43}%

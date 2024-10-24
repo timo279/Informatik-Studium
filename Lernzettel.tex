@@ -8,6 +8,7 @@
 \usepackage{multirow}
 \usepackage{enumitem}
 \usepackage{cancel}
+\usepackage[table,x11names]{xcolor}
 \usetikzlibrary{arrows}
 
 \title{Lernzettel}
@@ -93,7 +94,6 @@ Sei $X$ eine Menge. Eine Partition von $X$ ist eine Teilmenge $P \in \mathcal{P}
     \item für alle $Y,Z \in P$ mit $Y \neq Z, Y \cap Z = \emptyset$ ($Y$ und $Z$ sind disjunkt).
     \item $\bigcup_{Y \in P} Y = X$. 
 \end{itemize}
-\newpage
 Definierte Mengen:
 \begin{itemize}
     \item Leere Menge: $\emptyset = \{\}$
@@ -124,6 +124,37 @@ Eine binäre Relation R auf der Menger $X$ heißt:
     \item \textbf{transitiv}, wenn für alle $x, y, z \in X$ aus $x\:\text{R}\:y$ und $y\:\text{R}\:y$ stets $x\:\text{R}\:z$ folgt.
 \end{itemize}
 \subsection{Äquivalenzrelationen}
+Sei $X$ eine nicht leere Menge. Eine Relation R auf $X$ die relfexiv, symmetrisch und transitiv ist, heißt \textbf{Äquivalenzrelationen}. Für $x \in X$ nennt man die Menge
+\[[x]\sim_{\text{R}} = \{y \in X : x\:\text{R}\:y\}\]
+die \textbf{Äquivalenzklasse} von $x$. Man nennt $x$ und jedes andere Element aus $[x]\sim_{\text{R}}$ einen \textbf{Vertreter} oder \textbf{Repräsentanten} dieser Äquivalenzklasse.
+
+\newpage
+\section{Abbildungen}
+Eine \textbf{Abbildung} $f: X \to Y$ besteht aus:
+\begin{itemize}
+    \item einer Menge X, der \textbf{Definitionswert} von $f$;
+    \item einer Menge Y, der \textbf{Wertenbereich} von $f$;
+    \item einer \textbf{Vorschrift}, die jedem $x \in X$ eindeutig ein $y \in Y$ zuordnet.
+\end{itemize}
+Notation: $f: X \to Y, x \mapsto f(x)$ \\ 
+\newline
+\hbox{Seien $X, Y$ Mengen, $f: X \to Y$ eine Abbildung und $x \in X, y \in Y$ sodass $f(x)=y$.} \\
+Dann ist $y$ das \textbf{Bild} von $x$ und $x$ ein \textbf{Urbild} von $y$.\\
+Für eine Teilmenge $X_0 \subset X$ ist
+\[f(X_0) := \{y \in Y: \text{ es gibt } x \in X_0 \text{, sodass } f(x)=y\} \subset Y\]
+das \textbf{Bild} von $X_0$ und für eine Teilmenge $Y_0 \subset Y$ ist
+\[f^{-1}(Y_0) := \{x \in X : f(x) \in Y_0\} \subset X\]
+das \textbf{Urbild} von $Y_0$. \\ 
+\newline
+Seien $X$ und $Y$ Mengen und $f: X \to Y$ eine Abbildung.
+\begin{itemize}
+    \item[] $f$ ist \textbf{injektiv} falls aus $x_1,x_2 \in X$ mit $f(x_1) = f(x_2)$ stets $x_1 = x_2$ folgt.
+    \item[] $f$ ist \textbf{surjektiv} falls es für jedes $y \in Y$, ein $x \in X$ existiert so dass $f(x) = y$.
+    \item[] $f$ ist \textbf{bijektiv} falls $f$ injektiv und surjektiv ist.
+\end{itemize}
+Seien $X, Y, Z$ Mengen und $f: X \to Y$ und $g: Y \to Z$ Abbildungen.\\
+Die \textbf{Komposition} oder \textbf{Verknüpfung} von $f$ und $g$ ist die\\
+Abbildung $g \circ f: X \to Z$, definiert durch $(g \circ f)(x)=g(f(x))$.
 
 \section{Zahlensysteme}
 \subsection{Binärsystem}
@@ -156,7 +187,6 @@ Dieser kann von nachfolgenden Befehlen aufgerufen werden.
     \item[] Beispiel: $36_8 = 3 \cdot 8^1 + 6 \cdot 8^0 = 30_{10}$
     \item[] 3 Binärziffern lassen sich zu einer Oktalzahl zusammenfassen:\\$\underbrace{11}_{3_8} \underbrace{010}_{2_8} \underbrace{011_2}_{3_8} = 323_8$
 \end{itemize}
-\newpage
 \subsection{Festkommazahlen}
 Eine Festkommazahl besteht aus einer \textbf{festen Anzahl von Ziffern vor und nach dem Komma}.\\ \newline
 \begin{tabular}{c|c|c|c|c|c|c|c|c}
@@ -229,6 +259,64 @@ Beispiel: $01000010011010100000000000000000$
     \subitem{$1.828125 \cdot 2^5 = 58.5_{10}$}
 \end{enumerate}
 \section{Fehlererkennung}
+\subsection{Redundanzen}
+Eine Einheite von $n$ Datenbits und $k$ Redundanzbits nennt man \textbf{Codewort}.\\
+Die \textbf{Länge} eines Codeworts ist insgesammt $n+k$.\\
+Die Menge aller gültigen Codewörter nennt man \textbf{Code}.
+\subsection{Hamming-Distanz}
+Die Hamming Distanz zweier Codewörter ist gegeben als die Anzahl der Bitpositionen, in denen sie sich unterscheiden. \\
+\indent Beispiel: $11110000$ und $11001100 \implies$ Hamming-Distanz beträgt 4 \\ \newline 
+Die Hamming Distanz eines Codes ist die kleinste Hamming-Distanz zweier Codewörter \\
+\indent Beispiel: $\{1100, 0011, 1111\} \implies$ Hamming-Distanz beträgt 2 \\ \newline
+$c$-Bit Fehler können erkannt werden, wenn die Hamming-Distanz $c+1$ beträgt.
+$c$-Bit Fehler können korrigiert werden, wenn die Hamming-Distanz $2c+1$ beträgt.
+\subsection{Parität}
+Durch Hinzufügen eines \textbf{Paritätsbits} wird ein Code mit Hamming-Distanz 2 erzeugt.
+\begin{itemize}
+    \item[] gerade Parität: Gesamtzahl der 1en ist gerade (inklusive Paritätsbit)
+    \subitem{$\underbrace{00100101}_{Datenbits} \underbrace{1}_{\text{Paritätsbit}}$}
+    \item[] ungerade Parität: Gesamtzahl der 1en ist ungerade (inklusive Paritätsbit)
+    \subitem{$\underbrace{00100101}_{Datenbits} \underbrace{0}_{\text{Paritätsbit}}$}
+\end{itemize}
+\subsection{Zweidimensionale Parität}
+Die zweidimensionale Parität konstruiert einen Code mit Hamming-Distanz 4. \\
+Dabei werden $n$ Wörter zu je $n$ Bits in einer $n \times n$-Matrix untereinandergeschrieben und über jede Zeile und jede Spalte je ein Paritätsbit berechnet. \\
+\newline
+Bei einem 1-Bit-Fehler stimmen die Paritätsbits genau einer Zeile und Spalte nicht.\\
+Dann ist die Position des Fehlers klar und er kann korrigiert werden. \\ \newline
+\newcolumntype{a}{>{\columncolor{lightgray}}c}
+\newcolumntype{b}{>{\columncolor{white}}c}
+\begin{tabular}{l l r r}
+    fehlerfrei: & \begin{tabular}{c c c c|c}
+        0 & 1 & 1 & 0 & 0 \\
+        1 & 0 & 0 & 0 & 1 \\
+        0 & 1 & 0 & 0 & 1 \\
+        0 & 1 & 1 & 1 & 1 \\ \hline
+        1 & 1 & 0 & 1 & 1 \\
+    \end{tabular} &
+    1-Bit-Fehler: & \begin{tabular}{b b a b|b}
+        0 & 1 & 1 & 0 & 0 \\
+        \cellcolor{lightgray}1 & \cellcolor{lightgray}0 & \textcolor{red}{1} & \cellcolor{lightgray}0 & \cellcolor{lightgray}1\\
+        0 & 1 & 0 & 0 & 1 \\
+        0 & 1 & 1 & 1 & 1 \\ \hline
+        1 & 1 & 0 & 1 & 1 \\
+    \end{tabular} 
+\end{tabular}
+\subsection{Hamming-Code}
+Ein Hamming-Code mit $n$ \textbf{Redundanzbits} hat maximal $2^n - 1$ Bits und maximal $2^n -1 - n$ Datenbits (mit $n \in \mathbb{N}$)\\
+Die Bits des Codewortes werden, beginnend bei 1, durchnummeriert. \\
+Das $i$-te \textbf{Prüfbit}(auch Redundanzbit) steht im Codewort an Position $2^i$ ($\implies 1,2,4,8,\dots$) \\
+Beispiel: \begin{tabular}{c|c c}
+    Position & Bits des Codewortes & \\ \hline
+    \cellcolor{lightgray}$1_{10}$ & \cellcolor{lightgray}0 & Prüfbit \\
+    \cellcolor{lightgray}$2_{10}$ & \cellcolor{lightgray}1 & Prüfbit \\
+    $3_{10}$ & 0 & \\
+    \cellcolor{lightgray}$4_{10}$ & \cellcolor{lightgray}0 & Prüfbit \\
+    $5_{10}$ & 1 & \\
+    $6_{10}$ & 0 & \\
+    $7_{10}$ & 1 & \\
+\end{tabular} \hbox{Gespeichertes Datenwort: $0101$} \\
+Jedes Prüfbit ist ein Paritätsbit über eine eindeutige Menge von Bits.
 
 \newpage
 \section{Summenzeichen und Produktzeichen}
