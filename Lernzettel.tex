@@ -106,14 +106,14 @@ Es gilt: $\mathbb{N} \in \mathbb{Z} \in \mathbb{Q} \in \mathbb{R}$
 
 \section{Relationen}
 Eine \textbf{(binäre) Relation} zwischen zwei Mengen $X$ und $Y$ ist eine Teilmenge
-\[\text{R} \in X \times Y\]
+\[\text{R} \subset X \times Y\]
 Im Falle $X = Y$ sprechen wir von einer Relation auf X. \\
 $x \in X$ steht in Relation zu $y \in Y$ genau dann wenn $(x, y) \in \text{R}$. \\
 Auch geschrieben: $x\:\text{R}\:y$ oder $x \sim_{\text{R}} y$ für $(x, y) \in \text{R}$ und $x\:\cancel{\text{R}}\:y$ oder $x \cancel{\sim}_{\text{R}} y$ für $(x,y) \notin \text{R}$. \\ \newline
 Seien $X, Y$ und $Z$ Mengen und R $\subset X \times Y$, S $\subset Y \times X$ Relationen.
 \begin{itemize}
     \item Die zu R \textbf{inverse Relation} ist \[\text{R}^{-1} = \{(y,x) \in Y \times X : (x, y \in \text{R})\}\]
-    \item Die Verkettung von R und S ist \[\text{S} \circ \text{R} = \{(x,z) \in X \times Z : \text{es gibt } y \in Y \text{ mit } (x,y) \in \text{ R und } (y,z) \in \text{S}\}\]
+    \item Die Verkettung von R und S ist \[\text{S} \circ \text{R} = \{(x,z) \in X \times Z : \text{es gibt } y \in Y \text{ mit } (x,y) \in \text{R und } (y,z) \in \text{S}\}\]
 \end{itemize}
 Eine binäre Relation R auf der Menger $X$ heißt:
 \begin{itemize}
@@ -121,7 +121,7 @@ Eine binäre Relation R auf der Menger $X$ heißt:
     \item \textbf{symmetrisch}, wenn für alle $x, y \in X$ aus $x\:\text{R}\:y$ stets $y\:\text{R}\:x$ folgt.
     \item \textbf{antisymmetrische}, wenn für alle $x, y \in X$ aus $x\:\text{R}\:y$ und $y\:\text{R}\:x$ stets $x = y$ folgt.
     \item \textbf{asymmetrisch}, wenn für alle $x, y \in X$ aus $x\:\text{R}\:y$ stets $y\:\cancel{R}\:x$ folgt.
-    \item \textbf{transitiv}, wenn für alle $x, y, z \in X$ aus $x\:\text{R}\:y$ und $y\:\text{R}\:y$ stets $x\:\text{R}\:z$ folgt.
+    \item \textbf{transitiv}, wenn für alle $x, y, z \in X$ aus $x\:\text{R}\:y$ und $y\:\text{R}\:z$ stets $x\:\text{R}\:z$ folgt.
 \end{itemize}
 \subsection{Äquivalenzrelationen}
 Sei $X$ eine nicht leere Menge. Eine Relation R auf $X$ die relfexiv, symmetrisch und transitiv ist, heißt \textbf{Äquivalenzrelationen}. Für $x \in X$ nennt man die Menge
@@ -318,12 +318,13 @@ Dann ist die Position des Fehlers klar und er kann korrigiert werden. \\ \newlin
         0 & 1 & 1 & 1 & 1 \\ \hline
         1 & 1 & 0 & 1 & 1 \\
     \end{tabular} 
-\end{tabular}
+\end{tabular} \\
+Das Bit ganz unten rechts wird zur Paritätsberechnung der Paritätszeile und -spalte genutzt.
 \subsection{Hamming-Code}
 Ein Hamming-Code mit $n$ \textbf{Redundanzbits} hat maximal $2^n - 1$ Bits und maximal $2^n -1 - n$ Datenbits (mit $n \in \mathbb{N}$)\\
 Die Bits des Codewortes werden, beginnend bei 1, durchnummeriert. \\
 Das $i$-te \textbf{Prüfbit}(auch Redundanzbit) steht im Codewort an Position $2^i$ ($\implies 1,2,4,8,\dots$) \\
-Beispiel: \begin{tabular}{c|c c}
+Beispiel (gerade Parität): \begin{tabular}{c|c c}
     Position & Bits des Codewortes & \\ \hline
     \cellcolor{lightgray}$1_{10}$ & \cellcolor{lightgray}0 & Prüfbit \\
     \cellcolor{lightgray}$2_{10}$ & \cellcolor{lightgray}1 & Prüfbit \\
@@ -332,8 +333,11 @@ Beispiel: \begin{tabular}{c|c c}
     $5_{10}$ & 1 & \\
     $6_{10}$ & 0 & \\
     $7_{10}$ & 1 & \\
-\end{tabular} \hbox{Gespeichertes Datenwort: $0101$} \\
-Jedes Prüfbit ist ein Paritätsbit über eine eindeutige Menge von Bits.
+\end{tabular} \\ Gespeichertes Datenwort: $0101$ \\
+\subsubsection{Berechnung der Prüfbits}
+Jedes Prüfbit ist ein Paritätsbit über eine eindeutige Menge von Bits. \\
+Das $i$-te Prüfbit an Position $2^i$ wird über alle Stellen aus dem Codewort berechnet, für die in der Binärdarstellung für $2^i$ das Bit auf der jeweiligen Position auf 1 gesetzt ist. \\
+Beispiel: 0. Prüfbit an Stelle $2^2 = 4_{10} = 100_2 \implies$ jedes Bit aus dem Codewort, in dessen Binärdarstellung der Position das Bit auf Position $2^2$ gesetzt ist, wird zur Berechnung des Prüfbits verwendet. \\ 
 
 \newpage
 \section{Summenzeichen und Produktzeichen}
