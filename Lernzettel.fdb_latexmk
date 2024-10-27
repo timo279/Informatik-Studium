@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730042479.39269 "c:/Users/pasca/Desktop/Informatik-Studium/Lernzettel.tex" "Lernzettel.pdf" "Lernzettel" 1730042480.62522 0
-  "C:/Users/pasca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730039966 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1730057580.82617 "c:/Users/pasca/Desktop/Informatik-Studium/Lernzettel.tex" "Lernzettel.pdf" "Lernzettel" 1730057581.70979 0
+  "C:/Users/pasca/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730056942 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pasca/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1729683385 9292 bcc7fd0e01ac4d86ffb1125dcede59b6 ""
   "C:/Users/pasca/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1729683387 14064 936bc385e951927e9aad43f350dc62fe ""
   "C:/Users/pasca/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1729683132 24225047 b8aa67e58491307264827597a64c4fb8 ""
@@ -10,8 +10,10 @@
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
+  "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
+  "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233951854 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx6.tfm" 1136765053 1344 8a0be4fe4d376203000810ad4dc81558 ""
@@ -170,11 +172,11 @@
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1700127522 9125 e0e22f8bd8f488926acdd4e96dcc4d1e ""
   "C:/Users/pasca/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Lernzettel.aux" 1730042480 4741 9e218526ad9caa2ee8c9384cde80d955 "pdflatex"
-  "Lernzettel.out" 1730042480 5625 68a62f8fe07b3ee16b2390ab4d48538c "pdflatex"
-  "Lernzettel.tex" 1730042478 22692 47593dfd804a82e47d09c4373cfc852a ""
-  "Lernzettel.toc" 1730042480 2733 fa45f49b78c22b45f20f35cc77bbb58d "pdflatex"
-  "c:/Users/pasca/Desktop/Informatik-Studium/Lernzettel.tex" 1730042478 22692 47593dfd804a82e47d09c4373cfc852a ""
+  "Lernzettel.aux" 1730057581 3821 c0e790247e33288d1fc98ba9961a9656 "pdflatex"
+  "Lernzettel.out" 1730057581 4535 7770548d9f8df9b7b255a849ea73c937 "pdflatex"
+  "Lernzettel.tex" 1730057580 22909 44c956c93e6092208ed998b341e1309d ""
+  "Lernzettel.toc" 1730057581 2182 5a6d2186b4e750c8f68a4db3bd6ca6ed "pdflatex"
+  "c:/Users/pasca/Desktop/Informatik-Studium/Lernzettel.tex" 1730057580 22909 44c956c93e6092208ed998b341e1309d ""
   (generated)
   "Lernzettel.aux"
   "Lernzettel.log"

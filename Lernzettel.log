@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.23)  27 OCT 2024 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.23)  27 OCT 2024 20:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -543,134 +543,149 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--94
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 109--115
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
-
- []
-
-[7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Overfull \hbox (37.14449pt too wide) in paragraph at lines 155--160
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--137
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
+
+ []
+
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
+
+ []
+
+
+Overfull \hbox (37.14449pt too wide) in paragraph at lines 177--182
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
+Underfull \hbox (badness 10000) in paragraph at lines 184--189
 
  []
 
-[9]
-Overfull \hbox (18.7514pt too wide) in paragraph at lines 187--188
+[10]
+Overfull \hbox (18.7514pt too wide) in paragraph at lines 209--210
 []\OT1/cmr/m/n/12 Um \OT1/cmr/bx/n/12 neg-a-tive Zahlen \OT1/cmr/m/n/12 darzustellen wird der entsprechende Wert des \OT1/cmr/bx/n/12 h^^?ochsten
  []
 
 
-Overfull \hbox (11.21385pt too wide) in paragraph at lines 194--195
+Overfull \hbox (11.21385pt too wide) in paragraph at lines 216--217
 \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; A\OT1/cmr/m/n/12 ([]10)\OML/cmm/m/it/12 ; B\OT1/cmr/m/n/12 ([]11)\OML/cmm/m/it/12 ; C\OT1/cmr/m/n/12 ([]12)\OML/cmm/m/it/12 ; D\OT1/cmr/m/n/12 ([]13)\OML/cmm/m/it/12 ; E\OT1/cmr/m/n/12 ([]14)\OML/cmm/m/it/12 ; F\OT1/cmr/m/n/12 ([]15)\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 207--212
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 229--234
 
  []
 
 
-Overfull \hbox (77.41241pt too wide) in paragraph at lines 221--241
+Overfull \hbox (77.41241pt too wide) in paragraph at lines 243--263
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--241
+Underfull \hbox (badness 10000) in paragraph at lines 243--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--241
+Underfull \hbox (badness 10000) in paragraph at lines 243--263
 
  []
 
 
-Overfull \hbox (8.1473pt too wide) in paragraph at lines 221--241
+Overfull \hbox (8.1473pt too wide) in paragraph at lines 243--263
 \OT1/cmr/m/n/12 Exponent: wird gespe-ichert, in-dem man den fes-ten Bi-aswert (127:SP, 1023:DP)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--241
+Underfull \hbox (badness 10000) in paragraph at lines 243--263
 
  []
 
-[11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 283--289
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--289
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 305--311
 
  []
 
 
-Overfull \hbox (0.50565pt too wide) in paragraph at lines 283--289
+Underfull \hbox (badness 10000) in paragraph at lines 305--311
+
+ []
+
+
+Overfull \hbox (0.50565pt too wide) in paragraph at lines 305--311
 \OML/cmm/m/it/12 c$\OT1/cmr/m/n/12 -Bit Fehler k^^?onnen erkannt wer-den, wenn die Hamming-Distanz $\OML/cmm/m/it/12 c \OT1/cmr/m/n/12 + 1$ betr^^?agt.
  []
 
-[13]
-
-Package array Warning: Redefining primitive column b on input line 305.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--323
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--337
-
- []
-
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 338--341
+
+Package array Warning: Redefining primitive column b on input line 327.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--359
 
  []
 
 [15]
-Overfull \hbox (39.14465pt too wide) in paragraph at lines 346--349
+Underfull \hbox (badness 10000) in paragraph at lines 360--363
+
+ []
+
+[16]
+Overfull \hbox (39.14465pt too wide) in paragraph at lines 368--371
 \OT1/cmr/m/n/12 Dabei gilt: $\OML/cmm/m/it/12 i [][]\OT1/cmr/m/n/12 ;  \OML/cmm/m/it/12 m=n [][]$\OT1/cmr/m/n/12 .
  []
 
-[16] [17] [18] [19] (Lernzettel.aux)
+[17] [18] [19] (Lernzettel.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Lernzettel.out' has not changed.
-(rerunfilecheck)             Checksum: 68A62F8FE07B3EE16B2390AB4D48538C;5625.
+(rerunfilecheck)             Checksum: 7770548D9F8DF9B7B255A849EA73C937;4535.
  ) 
 Here is how much of TeX's memory you used:
- 21693 strings out of 474486
- 407630 string characters out of 5743754
+ 21682 strings out of 474486
+ 407516 string characters out of 5743754
  1940542 words of memory out of 5000000
- 43539 multiletter control sequences out of 15000+600000
- 568972 words of font info for 78 fonts, out of 8000000 for 9000
+ 43535 multiletter control sequences out of 15000+600000
+ 569617 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,93p,589b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pasca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk> <C:\Users\pasca\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/pasca/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Lernzettel.pdf (19 pages, 241103 bytes).
+Output written on Lernzettel.pdf (19 pages, 234918 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

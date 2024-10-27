@@ -104,6 +104,28 @@ Definierte Mengen:
 \end{itemize}
 Es gilt: $\mathbb{N} \in \mathbb{Z} \in \mathbb{Q} \in \mathbb{R}$
 
+\section{Boolische Algebra}
+Als eine \textbf{Boolische Algebra} bezeichnet man eine Menge $V = \{a,b,c,\dots\}$, auf der zwei zweistellige Operationen $\oplus$ und $\otimes$ derart definiert sind, dass durch ihre Anwendung auf Elemente aus $V$ wieder Elemente aus V enstehen (Abgeschlossenheit).\\
+\newline
+\textbf{Abgeschlossenheit:} für alle $a,b \in V$ gilt: \[a \otimes b \in V \]\[ a \oplus b \in V\]
+\newpage
+Zudem müssen die vier \textbf{Huntingtonischen Axiome} gelten:
+\begin{itemize}
+    \item H1: \textbf{Kommutativgesetz}
+        \[a \otimes b = b \otimes a\]
+        \[a \oplus b = b \oplus a\]
+    \item H2: \textbf{Distributivgesetz}
+        \[a \otimes (b \oplus c) = (a \otimes b) \oplus (a \otimes c)\]
+        \[a \oplus (b \otimes c) = (a \oplus b) \otimes (a \oplus c)\]
+    \item H3: \textbf{Neutrale Elemente} \\ Es existieren zwei Elemente $e,n \in V$, so dass gilt: \\
+        \begin{align*}
+            a \otimes e &= a \quad &(\text{$e$ wird \textbf{Einselelement} genannt})\\
+            a \oplus n &= a \quad &(\text{$n$ wird \textbf{Nullelement} genannt})
+        \end{align*}
+    \item H4: \textbf{Inverse Elemente} \\ Für jedes $a \in V$ existiert ein Element $a^{-1} \in V$, so dass gilt: \\
+        \[a \otimes a^{-1} = n\]
+        \[a \oplus a^{-1} = e\]
+\end{itemize}
 \section{Relationen}
 Eine \textbf{(binäre) Relation} zwischen zwei Mengen $X$ und $Y$ ist eine Teilmenge
 \[\text{R} \subset X \times Y\]
@@ -413,35 +435,5 @@ Der Bogenmaß ist die Länge des Kreisbogens des Einheitskreises und gibt den Be
 \end{center}
 Umwandlung von Winkel $\alpha$ von Gradmaß zu Bogenmaß: Bogenmaß $= \alpha \frac{\pi}{\text{180°}}$
 Umwandlung von Winkel $\alpha$ von Bogenmaß zu Gradmaß: Gradmaß $= \alpha \frac{\text{180°}}{\pi}$
-
-\section{Differentialrechnung}
-\subsection{Ableitungsregeln}
-\subsubsection{Natürliche Potenzen}
-\[\frac{d}{dx}x^n = nx^{x-1}\]
-\subsubsection{Summenregel}
-\[\frac{d}{dx}\left(u(x) + v(x)\right) = \frac{d}{dx}u(x) + \frac{d}{dx}v(x)\]
-\subsubsection{Produktregel}
-\[\frac{d}{dx}(u(x) \cdot v(x)) = \frac{d}{dx}u(x) \cdot v(x) + u(x) \cdot \frac{d}{dx}v(x)\]
-\subsubsection{Kettenregel}
-\[\frac{d}{dx}u(v(x)) = \frac{d}{dv}u(v) \cdot \frac{d}{dx}v(x)\]
-
-\newpage
-\section{Ebenen}
-\subsection{Parameterform}
-\[E: \vec{x} = \vec{p} + r \cdot \vec{u} + s \cdot \vec{v}\]
-\begin{center}
-    $\vec{p} \: \widehat{=}$ Stützvektor \\
-    $\vec{u}, \vec{v} \: \widehat{=}$ Spannvektoren
-\end{center}
-\subsection{Normalenform}
-\[E: (\vec{x} - \vec{p}) \cdot \vec{n} = 0\]
-\begin{center}
-    $\vec{x} \: \widehat{=}$ Ortsvektor \\
-    $\vec{p} \: \widehat{=}$ Stützvektor \\
-    $\vec{n} \: \widehat{=}$ Normalenvektor, orthogonal zu Spannvektoren
-\end{center}
-\subsection{Koordinatenform}
-\[ax_1 + bx_2 + cx_3 = d = \vec{n} \cdot \vec{p}\]
-Umwandlung von Koordinatenform in Normalenform:
 
 \end{document}
