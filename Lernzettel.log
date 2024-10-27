@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.29)  24 OCT 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.29)  27 OCT 2024 13:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -559,146 +559,148 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--115
 
 
 [6]
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 139--144
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
 
  []
 
 
-Overfull \hbox (37.14449pt too wide) in paragraph at lines 139--144
+
+[7]
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
+
+ []
+
+
+Overfull \hbox (37.14449pt too wide) in paragraph at lines 155--160
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--151
+Underfull \hbox (badness 10000) in paragraph at lines 162--167
 
- []
-
-
-
-[8]
-Overfull \hbox (18.7514pt too wide) in paragraph at lines 171--172
-[]\OT1/cmr/m/n/12 Um \OT1/cmr/bx/n/12 neg-a-tive Zahlen \OT1/cmr/m/n/12 darzustellen wird der entsprechende Wert des \OT1/cmr/bx/n/12 h^^?ochsten
- []
-
-
-Overfull \hbox (11.21385pt too wide) in paragraph at lines 178--179
-\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; A\OT1/cmr/m/n/12 ([]10)\OML/cmm/m/it/12 ; B\OT1/cmr/m/n/12 ([]11)\OML/cmm/m/it/12 ; C\OT1/cmr/m/n/12 ([]12)\OML/cmm/m/it/12 ; D\OT1/cmr/m/n/12 ([]13)\OML/cmm/m/it/12 ; E\OT1/cmr/m/n/12 ([]14)\OML/cmm/m/it/12 ; F\OT1/cmr/m/n/12 ([]15)\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
  []
 
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
-
+Overfull \hbox (18.7514pt too wide) in paragraph at lines 187--188
+[]\OT1/cmr/m/n/12 Um \OT1/cmr/bx/n/12 neg-a-tive Zahlen \OT1/cmr/m/n/12 darzustellen wird der entsprechende Wert des \OT1/cmr/bx/n/12 h^^?ochsten
  []
 
 
-Overfull \hbox (77.41241pt too wide) in paragraph at lines 205--225
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--225
-
- []
-
-
-Overfull \hbox (8.1473pt too wide) in paragraph at lines 205--225
-\OT1/cmr/m/n/12 Exponent: wird gespe-ichert, in-dem man den fes-ten Bi-aswert (127:SP, 1023:DP)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--225
-
+Overfull \hbox (11.21385pt too wide) in paragraph at lines 194--195
+\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; A\OT1/cmr/m/n/12 ([]10)\OML/cmm/m/it/12 ; B\OT1/cmr/m/n/12 ([]11)\OML/cmm/m/it/12 ; C\OT1/cmr/m/n/12 ([]12)\OML/cmm/m/it/12 ; D\OT1/cmr/m/n/12 ([]13)\OML/cmm/m/it/12 ; E\OT1/cmr/m/n/12 ([]14)\OML/cmm/m/it/12 ; F\OT1/cmr/m/n/12 ([]15)\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 . 
  []
 
 
 
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
+
+ []
+
+
+Overfull \hbox (77.41241pt too wide) in paragraph at lines 221--241
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--241
+
+ []
+
+
+Overfull \hbox (8.1473pt too wide) in paragraph at lines 221--241
+\OT1/cmr/m/n/12 Exponent: wird gespe-ichert, in-dem man den fes-ten Bi-aswert (127:SP, 1023:DP)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--241
+
+ []
+
+
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 267--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--273
-
- []
-
-
-Overfull \hbox (0.50565pt too wide) in paragraph at lines 267--273
-\OML/cmm/m/it/12 c$\OT1/cmr/m/n/12 -Bit Fehler k^^?onnen erkannt wer-den, wenn die Hamming-Distanz $\OML/cmm/m/it/12 c \OT1/cmr/m/n/12 + 1$ betr^^?agt.
- []
-
-
-Overfull \hbox (10.15976pt too wide) in paragraph at lines 278--279
-[]\OT1/cmr/m/n/12 ungerade Parit^^?at: Gesamtzahl der 1en ist unger-ade (inklu-sive Parit^^?atsbit) 
- []
-
-
 
 [12]
-
-Package array Warning: Redefining primitive column b on input line 288.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--305
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--305
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
 
  []
 
 
-Overfull \hbox (39.73207pt too wide) in paragraph at lines 306--320
-\OT1/cmr/m/n/12 Beispiel: [] [] 
+Overfull \hbox (0.50565pt too wide) in paragraph at lines 283--289
+\OML/cmm/m/it/12 c$\OT1/cmr/m/n/12 -Bit Fehler k^^?onnen erkannt wer-den, wenn die Hamming-Distanz $\OML/cmm/m/it/12 c \OT1/cmr/m/n/12 + 1$ betr^^?agt.
  []
 
 
 
 [13]
-Overfull \hbox (39.14465pt too wide) in paragraph at lines 325--328
-\OT1/cmr/m/n/12 Dabei gilt: $\OML/cmm/m/it/12 i [][]\OT1/cmr/m/n/12 ;  \OML/cmm/m/it/12 m=n [][]$\OT1/cmr/m/n/12 .
+
+Package array Warning: Redefining primitive column b on input line 305.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--322
+
+ []
+
+
+Overfull \hbox (39.73207pt too wide) in paragraph at lines 323--337
+\OT1/cmr/m/n/12 Beispiel: [] [] 
  []
 
 
 
 [14]
+Overfull \hbox (39.14465pt too wide) in paragraph at lines 342--345
+\OT1/cmr/m/n/12 Dabei gilt: $\OML/cmm/m/it/12 i [][]\OT1/cmr/m/n/12 ;  \OML/cmm/m/it/12 m=n [][]$\OT1/cmr/m/n/12 .
+ []
+
+
 
 [15]
 
 [16]
 
-[17] (Lernzettel.aux)
+[17]
+
+[18] (Lernzettel.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-30>
  ***********
 Package rerunfilecheck Info: File `Lernzettel.out' has not changed.
-(rerunfilecheck)             Checksum: A967A4DD748F19D57AD81178EABF8312;5207.
+(rerunfilecheck)             Checksum: 7BB0A4628661EDA8CA2930BE9E5D4E6A;5444.
  ) 
 Here is how much of TeX's memory you used:
- 21766 strings out of 473898
- 410006 string characters out of 5724083
+ 21773 strings out of 473898
+ 410115 string characters out of 5724083
  794317 words of memory out of 5000000
- 44209 multiletter control sequences out of 15000+600000
+ 44213 multiletter control sequences out of 15000+600000
  568972 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,93p,596b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Pascals PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk> <C:\Users\Pascals PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Lernzettel.pdf (17 pages, 233075 bytes).
+Output written on Lernzettel.pdf (18 pages, 238928 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 365 words of extra memory for PDF output out of 10000 (max. 10000000)
 

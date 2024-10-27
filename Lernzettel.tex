@@ -74,12 +74,12 @@ Mengenoperationen:
     \subitem{$A \setminus B = \{x : x \in A \land x \notin B\}$} (''A ohne B'')
 \end{itemize}
 \vspace{1ex}
-Kartesisches Produkt: \\
+\textbf{Kartesisches Produkt:} \\
 sei $n \in \mathbb{N}$ und seien $X_1, \dots, X_n$ Mengen, dann ist
 \[X_1 \times \dots \times X_n = \{(x_1, \dots, x_n) : x_i \in X_i, \text{ für } i = 1,\dots,n\}\]
 die Menge der n-\textbf{Tupel} mit $i$-ter Koordinate $x_i$ in $X_i$ für $i = 1,\dots,n$. \\
 \newline
-Potenzmenge: \\
+\textbf{Potenzmenge:} \\
 Die Menge aller Teilmengen einer Menge $X$ heißt Potenzmenge von $X$ und wird mit $\mathcal{P(X)}$ bezeichnet:
 \[\mathcal{P}(X) = \{Y: Y \subset X\}\]
 Es gilt immer: $\emptyset \in \mathcal{P}(X)$ und $X \in \mathcal{P}(X)$.\\
@@ -113,7 +113,7 @@ Auch geschrieben: $x\:\text{R}\:y$ oder $x \sim_{\text{R}} y$ für $(x, y) \in \
 Seien $X, Y$ und $Z$ Mengen und R $\subset X \times Y$, S $\subset Y \times X$ Relationen.
 \begin{itemize}
     \item Die zu R \textbf{inverse Relation} ist \[\text{R}^{-1} = \{(y,x) \in Y \times X : (x, y \in \text{R})\}\]
-    \item Die Verkettung von R und S ist \[\text{S} \circ \text{R} = \{(x,z) \in X \times Z : \text{es gibt } y \in Y \text{ mit } (x,y) \in \text{ R und } (x,y) \in \text{S}\}\]
+    \item Die Verkettung von R und S ist \[\text{S} \circ \text{R} = \{(x,z) \in X \times Z : \text{es gibt } y \in Y \text{ mit } (x,y) \in \text{ R und } (y,z) \in \text{S}\}\]
 \end{itemize}
 Eine binäre Relation R auf der Menger $X$ heißt:
 \begin{itemize}
@@ -126,8 +126,24 @@ Eine binäre Relation R auf der Menger $X$ heißt:
 \subsection{Äquivalenzrelationen}
 Sei $X$ eine nicht leere Menge. Eine Relation R auf $X$ die relfexiv, symmetrisch und transitiv ist, heißt \textbf{Äquivalenzrelationen}. Für $x \in X$ nennt man die Menge
 \[[x]\sim_{\text{R}} = \{y \in X : x\:\text{R}\:y\}\]
-die \textbf{Äquivalenzklasse} von $x$. Man nennt $x$ und jedes andere Element aus $[x]\sim_{\text{R}}$ einen \textbf{Vertreter} oder \textbf{Repräsentanten} dieser Äquivalenzklasse.
-
+die \textbf{Äquivalenzklasse} von $x$. Man nennt $x$ und jedes andere Element aus $[x]\sim_{\text{R}}$ einen \textbf{Vertreter} oder \textbf{Repräsentanten} dieser Äquivalenzklasse. \\
+\newline
+Sei $X$ eine Menge und $\sim$ eine Äquivalenzrelation auf $X$. Ein \textbf{Vertretersystem} ist eine Teilmenge von $X$, die für jede Äquivalenzklasse genau ein Element enthält.
+\subsection{Ordnungsrelationen}
+Sei $X$ eine Menge. Eine \textbf{Ordnung} auf $X$ ist eine reflexive, antisymmetrische und transitive Relation. Eine \textbf{strikte Ordnung} auf X ist eine asymmetrisch und transitive Relation. Wir nennen eine (strikte) Ordnung $\preceq$ \textbf{total}, wenn je zwei Elemente vergleichbar sind: 
+\[\text{für alle } x,y \in X \text{ gilt } x \preceq y \text{ oder } y \preceq x\]
+Ansonsten nennen wir sie \textbf{partiell}.
+\subsection{Hüllen}
+Sei R eine Relation auf der Menge $X$. Wir definieren:
+\begin{itemize}
+    \item Für $n \in \mathbb{N}_0$ \[R^n = \begin{cases}
+        \text{I}_X & n = 0 \\
+        \text{R} \circ \text{R}^{n-1} & n \geq 1 \\
+    \end{cases}\] Es gilt, dass R$^1 = $ R
+    \item Die \textbf{transitive Hülle} von R ist \[\text{R}_{\text{trans}} = \bigcup_{n\in\mathbb{N}} \text{R}^n\]
+    \item Die \textbf{reflexive Hülle} von R ist \[\text{R}_{\text{refl}} = \text{R} \cup \text{I}_X\]
+    \item Die \textbf{symmetrische Hülle} von R ist \[\text{R}_{\text{sym}} = \text{R} \cup \text{R}^{-1}\]
+\end{itemize}
 \newpage
 \section{Abbildungen}
 Eine \textbf{Abbildung} $f: X \to Y$ besteht aus:
@@ -273,9 +289,10 @@ $c$-Bit Fehler können korrigiert werden, wenn die Hamming-Distanz $2c+1$ beträ
 \subsection{Parität}
 Durch Hinzufügen eines \textbf{Paritätsbits} wird ein Code mit Hamming-Distanz 2 erzeugt.
 \begin{itemize}
-    \item[] gerade Parität: Gesamtzahl der 1en ist gerade (inklusive Paritätsbit)
+    \item[] Das Paritätsbit wird gesetzt sodass die Gesamtzahl der 1en...
+    \item[] ... gerade ist
     \subitem{$\underbrace{00100101}_{Datenbits} \underbrace{1}_{\text{Paritätsbit}}$}
-    \item[] ungerade Parität: Gesamtzahl der 1en ist ungerade (inklusive Paritätsbit)
+    \item[] ... ungerade ist
     \subitem{$\underbrace{00100101}_{Datenbits} \underbrace{0}_{\text{Paritätsbit}}$}
 \end{itemize}
 \subsection{Zweidimensionale Parität}

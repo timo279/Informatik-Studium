@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1729782662.45941 "c:/Users/Pascals PC/Desktop/Informatik-Studium/Lernzettel.tex" "Lernzettel.pdf" "Lernzettel" 1729782663.48495 0
+["pdflatex"] 1730032327.24582 "c:/Users/Pascals PC/Desktop/Informatik-Studium/Lernzettel.tex" "Lernzettel.pdf" "Lernzettel" 1730032328.28716 0
   "C:/Users/Pascals" 1718573311 18943 1fc4cf5e7688ed956abaaac4b33624c6 ""
-  "C:/Users/Pascals PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727643092 82535 0266753fb37a3d673c1d739765ad059f ""
+  "C:/Users/Pascals PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1729955834 82535 0266753fb37a3d673c1d739765ad059f ""
   "C:/Users/Pascals PC/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1727648505 9292 1818d7d80dec23517a7920b265d33de9 ""
   "C:/Users/Pascals PC/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1727348071 14064 8d8bcf380f0868402464522a2c120ebc ""
   "C:/Users/Pascals PC/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1727643132 11950634 bc85411778bf76a28eebb10e2443f12f ""
@@ -170,12 +170,12 @@
   "C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1700127522 9125 e0e22f8bd8f488926acdd4e96dcc4d1e ""
   "C:/Users/Pascals PC/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Lernzettel.aux" 1729782663 4422 66de876fd4d12edc264e42781f94adce "pdflatex"
-  "Lernzettel.out" 1729782663 5207 a967a4dd748f19d57ad81178eabf8312 "pdflatex"
-  "Lernzettel.tex" 1729782660 20852 36146bb38827f5c09f3951f8989e88b7 ""
-  "Lernzettel.toc" 1729782663 2537 f9735a4835a7af7efa7033c121861cf9 "pdflatex"
+  "Lernzettel.aux" 1730032328 4626 6ff028bc70d92c44b543a84a1378613c "pdflatex"
+  "Lernzettel.out" 1730032328 5444 7bb0a4628661eda8ca2930be9e5d4e6a "pdflatex"
+  "Lernzettel.tex" 1730032326 22114 ef7403c1f4545bd137d35f9da44ec859 ""
+  "Lernzettel.toc" 1730032328 2659 5b187208060cadaedaa024d3e28b74b9 "pdflatex"
   "c:/Users/Pascals" 1718573311 18943 1fc4cf5e7688ed956abaaac4b33624c6 ""
-  "c:/Users/Pascals PC/Desktop/Informatik-Studium/Lernzettel.tex" 1729782660 20852 36146bb38827f5c09f3951f8989e88b7 ""
+  "c:/Users/Pascals PC/Desktop/Informatik-Studium/Lernzettel.tex" 1730032326 22114 ef7403c1f4545bd137d35f9da44ec859 ""
   (generated)
   "Lernzettel.aux"
   "Lernzettel.log"
